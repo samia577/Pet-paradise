@@ -1,6 +1,39 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+#petimage{
+    width:90%;
+    height:90%;
+    display:block;
+    margin:0 auto;
+}
+#petcontainer{
+    margin-bottom:50px;
+}
+#pettitle{
+    display:block;
+    text-align:center;
+    font-family:sans-serif;
+    font-size:19px;
+}
+#petquantity{
+    width:50%;
+    display:inline;
+    text-align:center;
+
+
+}
+#cart {
+    width: 50%;
+    display: inline;
+}
+#petprice {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 17px;
+    color:grey;
+}
 a.navbar-brand {
   white-space: normal;
   text-align: center;

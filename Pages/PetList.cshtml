@@ -1,0 +1,21 @@
+﻿@page
+@model Pet_shop.Pages.PetListModel
+@{
+    ViewData["Title"] = "Pet List";
+}
+<div class="text-center">
+    <h1 class="display-4">Pet Paradise</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>ss
+<div class="row">
+    @foreach (var pet in Model.Pets)
+    {
+        <div id="petcontainer" class="col-lg-3 col-md-6 col-sm-12">
+            <img id="petimage" src="@pet.pet_image" />
+            <span id="pettitle">@pet.pet_name</span>
+            <span id="petprice">Rs.Coming Soon</span>
+            <span id="petquantity"><input type="number" name="quantity" value="" placeholder="0" /></span>
+            <span id="card"><button>Add to Cart</button></span>
+        </div>
+    }
+</div>
